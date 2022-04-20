@@ -2,13 +2,15 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="stylesheet" href="style/index-style.css">
+    <link rel="stylesheet" href="style/feed-style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Lab</title>
 </head>
+
 <body>
+
     <header>
         <nav>
             <div class="menu-bar">
@@ -20,107 +22,57 @@
                 </ul>
             </div>
         </nav>
+
     </header>
-    <aside>
-        <div id="index-pic">
-            <img src="images/indexPerfil.png" alt="Foto do perfil">
-            <p>"Lady Gaga"</p>
-        </div>
-        <div class="profile-aside">
-            <h3>Eventos</h3>
-        </div>,,,
-        <div class="profile-aside">
-            <h3>Atividades Recentes</h3>
-            <div class="profile-friends">
-                <a href=""> <img src="images/avatar.png" alt=""></a>
-                <a href=""> <img src="images/avatar.png" alt=""></a>
-                <a href=""> <img src="images/avatar.png" alt=""></a>
-                <a href=""> <img src="images/avatar.png" alt=""></a>
-                <a href=""> <img src="images/avatar.png" alt=""></a>
-                <a href=""> <img src="images/avatar.png" alt=""></a>
-                <a href=""> <img src="images/avatar.png" alt=""></a>
-                <a href=""> <img src="images/avatar.png" alt=""></a>
-                <a href=""> <img src="images/avatar.png" alt=""></a>
+
+    <div id="page-content">
+
+        <aside>
+            <div id="profile-pic">
+                <img src="images/avatar.png" alt="Foto do perfil">
             </div>
-            <div style="text-align: right;"><a href="">ver mais</a></div>
-        </div>
-    </aside>
-   
-    
-    <!--
- <main>
-        <section class="index-post" id="galery">
-            <h2>Galeria de fotos</h2>
-            <div class="profile-galery">
-                <a href=""> <img src="images/ladyGagaMetallica.jpg" alt=""></a>
+            <div class="profile-aside" id="user-profile">
+                <h3>Beyoncé Knowles</h3>
+                <ul>
+                    <li>Cantora, compositora</li>
+                    <li>Houston, TX</li>
+                    <li>Inglês, Espanhol</li>
+
             </div>
-            <div style="text-align: right;"><a href="">ver mais</a></div>
-        </section>
-        <section class="profile-section" id="activity">
-            <h2>Atividades</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur si Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit
-                anim id est laborum.</p>
-        </section>
-        <section class="profile-section" id="music">
-            <h2>Músicas</h2>
-            <iframe width="95%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1242943402&color=%23d800ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <iframe width="95%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1181431828&color=%23aa00ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-         </section>
-        <section class="profile-section section-list" id="awards">
-            <h2>Premiações</h2>
-            <ul>
-                <li>Grammy 2011</li>
-                <li>Oscar 2015</li>
-                <li>Oscar 2018</li>
-            </ul>
-        </section>
-        <section class="profile-section" id="professional-experience">
-            <h2>Experiência profissional</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur si Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit
-                anim id est laborum.</p>
-        </section>
-        <section class="profile-section" id="academic">
-            <h2>Formação acadêmica</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur si Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit
-                anim id est laborum.</p>
-        </section>
-    </main> 
-    -->
+            <div class="profile-aside">
+                <h3>CONTEÚDO 1</h3>
+            </div>
+            <div class="profile-aside">
+                <h3>CONTEÚDO 2</h3>
+                
+            </div>
+        </aside>
+
+        <main>
+            <section class="profile-section">
+                <h2>CONTEÚDO FEED 1</h2>
+            </section>
+            <section class="profile-section">
+                <h2>CONTEÚDO FEED 2</h2>
+            </section>
+            <section class="profile-section">
+                <h2>CONTEÚDO FEED 3</h2>
+            </section>
+            <section class="profile-section">
+                <h2>CONTEÚDO FEED 4</h2>
+            </section>
+           
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>Criado por André Bicudo, Douglhas Nassiffe, Sarah Araújo
+            <br>Todos os direitos reservados - 2022
+        </p>
+    </footer>
+
 </body>
+
 </html>
