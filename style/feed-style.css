@@ -8,7 +8,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color:rgb(240, 240, 250); 
+    background-color:rgb(240, 240, 250);
+    
 }
 
 /* ESTILIZAÇÃO HEADER*/
@@ -74,67 +75,17 @@ nav {
 
 }
 
-
-.profile-cover {
-    display: flex;
-    justify-content:space-between;
-    align-items: flex-end;
-    flex-direction: row;
-    width: 1040px;
-    height: 320px;
-    background-image: url('../images/profilecover.jpg');
-    background-size: contain;
-    border-radius: 10px;
-}
-
-.profile-name{
-    margin-left: 300px;
-}
-
-.profile-name h1{
-    
-    color: rgb(240, 240, 250);
-    text-shadow: 0 0 1em rgb(129, 54, 226);
-}
-
-.profile-buttons ul {
-    margin: 20px;
-    display: flex;
-    align-items: stretch;
-    height: 100%;
-}
-
-.profile-buttons li {
-
-    list-style: none;
-    margin: 0 10px;
-    padding: 10px;
-    background-color: rgba(194, 194, 235, 0.7);
-    border-radius: 10px;
-    color: rgba(250, 250, 250);
-
-}
-
-.profile-buttons li:hover {
-    
-    background-color: rgba(194, 194, 235);
-    color:rgb(129, 54, 226);
-    box-shadow: 0 0 1em rgb(194, 194, 235);
-}
-
-.profile-buttons a{
-    
-    text-decoration: none;
-    color: rgb(240, 240, 250);
-}
-
 /* DEFINIÇÃO E ORGANIZAÇÃO DOS CONTEÚDOS USANDO FLEX*/
 
 #page-content {
 
     display: flex;
+    margin:0;
+    padding: 0;
     max-width: 1040px;
     justify-content: space-between;
+    padding-top: 55px;
+
 
 }
 
@@ -144,7 +95,7 @@ nav {
 
 aside {
     box-sizing: border-box;
-    flex-basis: 30%;
+    width: 320px;
 }
 
 .profile-aside h3 {
@@ -162,6 +113,7 @@ aside {
 
 
 .profile-aside {
+    
     
     background-color: #F6F6F9;
     box-shadow: 0 0 0.5em rgb(194, 194, 235);
@@ -181,36 +133,19 @@ aside {
 
 #profile-pic {
     display: flex;
-    align-items:flex-end;
     justify-content: center;
-    height: 30px;
     margin: 5px;
     margin-left: 0;
     padding: 0;
 }
 
-.profile-friends {
-    display: flex;
-    flex-basis: 70%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-
-}
-
-.profile-friends img {
-    margin: 5px;
-    width: 60px;
-    height: 60px;
-    border: 1px solid rgb(194, 194, 235);
-}
 
 /* ESTILIZAÇÃO MAIN */
 
 main {
     box-sizing: border-box;
     align-items: center;
-    flex-basis: 70%;
+    width: 720px;
 
 }
 
@@ -227,54 +162,6 @@ main {
     margin:0;
 }
 
-.profile-galery {
-
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 10px;
-
-}
-
-.profile-galery img {
-    width: 120px;
-    height: 120px;
-    border: 1px solid rgb(194, 194, 235);
-}
-
-.profile-galery img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 1em rgb(194, 194, 235);
-}
-
-.view-more-link{
-    text-align: right;
-}
-
-.activity-display{
-    height: 50px;
-    padding: 10px 0;
-}
-
-#music iframe {
-
-    margin: 10px;
-
-}
-
-.section-list ul {
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-
-}
-
-.section-list li {
-    padding: 10px;
-    margin: 10px;
-    border-top: 1px dashed rgb(194, 194, 235);
-}
 
 /* ESTILIZANDO O FOOTER */
 
