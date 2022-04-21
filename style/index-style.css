@@ -2,7 +2,7 @@
 
 .menu-bar{
     display: flex;
-    height: 80%;
+    height: 100%;
     max-width: 1040px;
     justify-content: flex-end;
     align-items: center;
