@@ -66,7 +66,6 @@ function signup() {
 
 
     for (let i = 0; i < arrayInputs.length; i++) {
-        console.log("valor " + i + " " + arrayInputs[i].value);
         if (arrayInputs[i].value == null || arrayInputs[i].value == "") {
             arrayInputs[i].setAttribute('class', 'signup-input empty');
             arrayInputs[i].setAttribute('placeholder', 'Preenchimento obrigatório');
