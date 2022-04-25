@@ -97,7 +97,7 @@ function signup() {
     if (follow) {
 
         alert('Cadastrado com sucesso');
-        window.location = 'index.html';
+        window.location = 'feed.html';
 
     }
 }
@@ -107,7 +107,7 @@ function loginVerification() {
     login = document.getElementById('login');
     password = document.getElementById('password');
     if (login.value == testUser.login && password.value == testUser.password)
-        window.location = 'index.html';
+        window.location = 'feed.html';
     else {
         login.setAttribute('class', 'login-input empty');
         password.setAttribute('class', 'login-input empty');
