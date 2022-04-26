@@ -172,9 +172,18 @@ main {
 .feed-publicacao{
     flex-direction: row;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
+.feed-publicacao-profile{
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
 
 .feed-publicacao img{
     width: 60px;
@@ -182,14 +191,16 @@ main {
 }
 
 
-.feed-publicacao p{
+.feed-publicacao-profile p{
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
     margin-left: 10px;
 }
+
 .feed-publicacao-icones{
     flex-direction: row;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -200,13 +211,23 @@ main {
 }
 
 
-.feed-publicacao-icones p{
+.feed-publicacao-icones a{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 10px;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 10px;
+    text-decoration: none;
+    color: black;
 }
 
-.feed-publicacao ul{
+.feed-publicacao-icones a:hover{
+    background-color: rgb(194, 194, 235,0.5);
+    color: rgb(129, 54, 226);
+}
+
+.feed-publicacao-profile ul{
     list-style: none;
     margin: 0;
     margin-left: 10px;
@@ -214,7 +235,7 @@ main {
     font-size: small;
     color: rgb(120, 120, 132);
 }
-.feed-publicacao h4{
+.feed-publicacao-profile h4{
     margin: 0;
     margin-left: 10px;
 }
@@ -231,9 +252,24 @@ main {
 .profile-section h2{
     margin:0;
 }
+
+.delete-button{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+}
+
+.delete-button img{
+    width: 20px;
+    
+    
+}
+
 .feed-interacao{
     flex-direction: row;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -242,16 +278,28 @@ main {
     height: 30px;
 }
 
-.feed-interacao p{
+.feed-interacao a{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 5px;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 10px;
-    margin-right: 40px;
+    text-decoration: none;
+    color: black;
 }
+
+.feed-interacao a:hover{
+    background-color: rgb(194, 194, 235,0.5);
+    color: rgb(129, 54, 226);
+}
+
 
 .feed-interacao-publicacao{
     flex-direction: row;
     display: flex;
+    justify-content: flex-end;
     margin-bottom: 10px;
 }
 
@@ -265,25 +313,44 @@ main {
 
 .feed-interacao-publicacao p{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;
+    margin: 5px 10px;
 }
 
-#input-feed{
-    border: 1px solid rgb(120, 120, 132);
+.input-feed{
+    border: 1px solid rgb(194, 194, 235);
     border-radius: 10px;
     height: 50px;
-    width: 450px;
-    margin-left: 10px;
+    width:365px;
+    box-sizing: border-box;
 }
 
-#input-feed:focus{
+.input-feed:focus{
     outline: 2px solid rgb(194, 194, 235);
+}
+
+.post-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    background-color: rgb(194, 194, 235);
+    color: white;
+    
+}
+
+.post-button:hover{
+    background-color: rgb(194, 194, 235,0.5);
+    color: rgb(129, 54, 226);
 }
 
 /* ESTILIZANDO O FOOTER */
 
 footer {
     height: 80px;
+    box-sizing: border-box;
+    padding-top: 10px;
     background-color: rgb(194, 194, 235);
     width: 100%;
     font-size: medium;
