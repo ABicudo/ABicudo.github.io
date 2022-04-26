@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+     background-color: rgb(186, 224, 211);
+    font-family: verdana;
+    
+}
+
+#menu li{
+    background-color: rgb(146, 138, 153);
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 2em;
+    }
+a{
+    
+    font-family: verdana;
+    display: block;
+    padding: 20px 5px;
+}
+.pesquisa{
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.outros{
+    margin-left: 10px;
+    margin-top: 5px;
+}
