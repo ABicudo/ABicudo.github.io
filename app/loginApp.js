@@ -1,7 +1,10 @@
 const testUser = {
-    name: "Beyonce",
+    name: "Beyoncé",
     login: "beyonce@gmail.com",
-    password: "blue"
+    password: "blue",
+    city: "Houston, TX",
+    category: "Cantora, compositora",
+    avatar: "images/avatar.png"
 
 }
 

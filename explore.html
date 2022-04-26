@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/explore-css.css">
-    <title>Explorar</title>
+    <link rel="stylesheet" href="style/explore-style.css">
+    <title>Explorar - Rede Social</title>
 </head>
-<body>
-    <nav>
-    <ul id="menu">
-        <li><a href="">Salvar</a></li>
-        <li><a href="">Favoritos</a></li>
-        <li><a href="">Alerta</a></li>
-    </ul>
-    </nav>
-    <br><br>
 
-    <nav>
-        <label class="pesquisa">Pesquisar</label>
-        <textarea style="width:30em" id="Pesquisar" name="Pesquisar"></textarea>
-    </nav>
-    <br><br>
-    <nav>
-    <ul class="outros">
-        <li><a href="">Filtros</a></li>
-        <li><a href="">Usuários</a></li>
-        <li><a href="">Eventos</a></li>        
-        <li><a href="">Localização</a></li>
-    </ul>
-    
+<body>
+    <script src="app/exploreApp.js"></script>
+    <header>
+        <nav>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="feed.html">Início</a></li>
+                    <li><a href="profile.html">Perfil</a></li>
+                    <li><a href="explore.html">Explorar</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="page-content">
+
+        <aside>
+            <div id="explore-aside">
+                <ul>
+                    <li class="unchecked">Pessoas</li>
+                    <li class="unchecked">Música</li>
+                    <li class="unchecked">Mídia</li>
+                    <li class="unchecked">Eventos</li>
+                    <li class="unchecked">Chamados</li>
+                    <li class="unchecked">Localização</li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <section class="explore-section" id="explore-tool">
+                <h1>Conecte-se com a comunidade musical</h1>
+                <div id="search-tool">
+                    <input type="text" id="search-input">
+                    <input type="submit" id="search-button" value="Explorar">
+                </div>
+                <div id="search-time">
+                    <ul>
+                        <li class="unchecked">Hoje</li>
+                        <li class="unchecked">Úlitmos 7 dias</li>
+                        <li class="unchecked">Últimos 30 dias</li>
+                        <li class="checked">Todo tempo</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="explore-section results">
+                <h1>Resultados para: </h1>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Criado por André Bicudo, Douglhas Nassiffe, Sarah Araújo
+            <br>Todos os direitos reservados - 2022
+        </p>
+    </footer>
 </body>
+
 </html>

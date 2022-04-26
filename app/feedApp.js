@@ -9,12 +9,6 @@ const testUser = {
 }
 
 
-
-function apagar() {
-    this.parentNode.remove();
-}
-
-
 function addPost() {
     
     let postText = document.getElementById('post-text');

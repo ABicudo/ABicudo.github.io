@@ -157,7 +157,7 @@ nav {
 main {
     box-sizing: border-box;
     align-items: center;
-    width: 520px;
+    min-width: 520px;
 }
 
 .profile-section {
@@ -255,7 +255,7 @@ main {
 
 .delete-button{
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 50%;
     justify-content: flex-end;
 }
 
