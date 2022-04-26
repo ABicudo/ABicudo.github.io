@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <script src="app/exploreApp.js"></script>
+    
     <header>
         <nav>
             <div class="menu-bar">
@@ -27,7 +27,7 @@
 
         <aside>
             <div id="explore-aside">
-                <ul>
+                <ul id="categoryList">
                     <li class="unchecked">Pessoas</li>
                     <li class="unchecked">Música</li>
                     <li class="unchecked">Mídia</li>
@@ -42,10 +42,10 @@
                 <h1>Conecte-se com a comunidade musical</h1>
                 <div id="search-tool">
                     <input type="text" id="search-input">
-                    <input type="submit" id="search-button" value="Explorar">
+                    <input type="submit" id="search-button" value="Explorar" onclick="explore()">
                 </div>
                 <div id="search-time">
-                    <ul>
+                    <ul id="timeList">
                         <li class="unchecked">Hoje</li>
                         <li class="unchecked">Úlitmos 7 dias</li>
                         <li class="unchecked">Últimos 30 dias</li>
@@ -63,6 +63,7 @@
             <br>Todos os direitos reservados - 2022
         </p>
     </footer>
+    <script src="app/exploreApp.js"></script>
 </body>
 
 </html>
