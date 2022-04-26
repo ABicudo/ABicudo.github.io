@@ -166,7 +166,7 @@ main {
     padding: 0 10px;
     margin: 5px 10px;
     height: 40px;
-    width: 450px;
+    width: 460px;
     border-radius: 10px;
     border: 1px solid rgb(194, 194, 235);
 
@@ -247,6 +247,30 @@ main {
     flex-direction: column;
 }
 
+.results h1{
+    margin: 0;
+    color: rgb(44, 43, 43);
+    font-style: italic;
+}
+
+.details-search{
+    margin: 5px;
+    padding: 0;
+    color: dimgray;
+}
+
+.details-search h4{
+    margin:0;
+    font-size: smaller;
+
+}
+
+.result-topics{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 0;
+    border-top: 1px dashed rgb(194, 194, 235);
+}
 
 /*ESTLIZANDO FOOTER*/
 footer {

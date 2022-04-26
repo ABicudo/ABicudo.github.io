@@ -24,11 +24,11 @@
         </nav>
     </header>
     <div id="page-content">
-
+        
         <aside>
             <div id="explore-aside">
                 <ul id="categoryList">
-                    <li class="unchecked">Pessoas</li>
+                    <li class="checked">Pessoas</li>
                     <li class="unchecked">Música</li>
                     <li class="unchecked">Mídia</li>
                     <li class="unchecked">Eventos</li>
@@ -38,10 +38,11 @@
             </div>
         </aside>
         <main>
+            <div id="search-content">
             <section class="explore-section" id="explore-tool">
                 <h1>Conecte-se com a comunidade musical</h1>
                 <div id="search-tool">
-                    <input type="text" id="search-input">
+                    <input type="text" id="search-input" placeholder="Digite aqui">
                     <input type="submit" id="search-button" value="Explorar" onclick="explore()">
                 </div>
                 <div id="search-time">
@@ -53,9 +54,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="explore-section results">
-                <h1>Resultados para: </h1>
-            </section>
+        </div>
         </main>
     </div>
     <footer>
