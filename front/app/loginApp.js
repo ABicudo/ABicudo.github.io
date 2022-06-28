@@ -97,6 +97,7 @@ function signup() {
         credentials: "same-origin"
       })
         .then((response) => {
+            response.json();
             window.location = "profile.html"
             return alert("Cadastro realizado com sucesso!")
         })
@@ -125,6 +126,7 @@ function loginVerification() {
         credentials: "same-origin"
       })
         .then((response) => {
+            response.json();
             window.location = "profile.html"
         })
         .catch((e) => {
