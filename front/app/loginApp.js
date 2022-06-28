@@ -17,29 +17,13 @@ function showForm() {
     let date = document.getElementById('sDate').value;
     formulario.innerHTML +=
         `<label>Cidade</label>
-    <input type="text" class="signup-input">
+    <input type="text" class="signup-input" id="sCity">
     <br>
     <label>Nome Artístico</label>  
-   <input type="text" class="signup-input" id="sCity">
-    <br>
-    
-    <label>Gênero</label>
-    <select class="signup-input" id="sGender">
-        <option>Feminino</option>
-        <option>Masculino</option>
-        <option>Outros</option>
-    </select>
+   <input type="text" class="signup-input" id="sNick">
     <br>
     <label>Profissão</label>
-    <input type="text" class="signup-input">
-    <br>
-    <label>Idioma</label>
-    <select id="sLanguage" class="signup-input">
-        <option>Português (BR)</option>
-        <option>Inglês</option>
-        <option>Espanhol</option>
-        <option>Outros</option>
-    </select>
+    <input type="text" class="signup-input" id="sProfession">
     <br>
     <label>Fale sobre você</label>
     <br>
@@ -98,21 +82,73 @@ function signup() {
 
     if (follow) {
 
-        alert('Cadastrado com sucesso');
-        window.location = 'feed.html';
+        //--------------BEGIN
+        const data = accessData()
+        console.log(data)
+        const url = "http://localhost:3000/auth"
+
+
+    fetch(`${url}/register`, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json"
+        },
+        credentials: "same-origin"
+      })
+        .then((response) => {
+            window.location = "profile.html"
+            return alert("Cadastro realizado com sucesso!")
+        })
+        .catch((e) => {
+            return console.error(e)
+        })
+        // -----------end
+    
 
     }
 }
 
 function loginVerification() {
 
-    login = document.getElementById('login');
-    password = document.getElementById('password');
-    if (login.value == testUser.login && password.value == testUser.password)
-        window.location = 'feed.html';
-    else {
-        login.setAttribute('class', 'login-input empty');
-        password.setAttribute('class', 'login-input empty');
-        alert('Usuário ou senha incorretas!');
+    const loginData = getLoginData();
+
+    const url = "http://localhost:3000/auth"
+
+
+    fetch(`${url}/login`, {
+        method: "POST",
+        body: JSON.stringify(loginData),
+        headers: {
+          "Content-Type": "application/json"
+        },
+        credentials: "same-origin"
+      })
+        .then((response) => {
+            window.location = "profile.html"
+        })
+        .catch((e) => {
+            return console.error(e)
+        })
+}
+
+function accessData() {
+    return { 
+        "name": document.getElementById('sName').value,
+        "surName": document.getElementById('sSurName').value,
+        "email": document.getElementById('sEmail').value,
+        "birthDate": document.getElementById('sDate').value,
+        "city": document.getElementById('sCity').value,
+        "nickName": document.getElementById('sNick').value,
+        "profession": document.getElementById('sProfession').value,
+        "bio": document.getElementById('sBio').value,
+        "password": document.getElementById('sPassword').value
+    }
+}
+
+function getLoginData() {
+    return {
+        "email": document.getElementById('login').value,
+        "password": document.getElementById('password').value
     }
 }
